@@ -4,7 +4,7 @@ from slackclient import SlackClient
 import time
 
 stockurl = "http://dev.markitondemand.com/MODApis/Api/v2/Quote/jsonp?symbol="
-token = "xoxb-50113255603-rf2Duk0KMIeMNciNW7wDv6K2"
+token = "<token>"
 slackchannel = "general"
 
 
