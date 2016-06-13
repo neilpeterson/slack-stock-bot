@@ -11,7 +11,7 @@
 
 When the stock bot has been successfully started, a startup message will be displayed.
 
-To return the current stock price used:
+To return the current stock price use:
 
 ```none
 stock:symbol
@@ -26,7 +26,7 @@ stock:msft
 Multiple symbols can be combined like this:
 
 ```none
-stock:msft;xomlgpro
+stock:msft;xoml;gpro
 ```
 
 The following image demonstrates all of the above examples.
