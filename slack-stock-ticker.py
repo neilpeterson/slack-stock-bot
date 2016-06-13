@@ -5,15 +5,15 @@ from slackclient import SlackClient
 import time
 
 stockurl = "http://dev.markitondemand.com/MODApis/Api/v2/Quote/jsonp?symbol="
-slackchannel = "general"
 
-# get slack api user token
+
+# get slack api user token and channel
 parser = argparse.ArgumentParser()
 parser.add_argument('--slack-token', help="Slack API user token.")
+parser.add_argument('--slack-channel', help="Slack channe.")
 args = parser.parse_args()
 token = args.slack_token
-
-print(token)
+slackchannel = args.slack_channel
 
 # monitor slack api
 sc = SlackClient(token)
