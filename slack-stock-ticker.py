@@ -1,12 +1,19 @@
+import argparse
 import json
 import requests
 from slackclient import SlackClient
 import time
 
 stockurl = "http://dev.markitondemand.com/MODApis/Api/v2/Quote/jsonp?symbol="
-token = "<token>"
 slackchannel = "general"
 
+# get slack api user token
+parser = argparse.ArgumentParser()
+parser.add_argument('--slack-token', help="Slack API user token.")
+args = parser.parse_args()
+token = args.slack_token
+
+print(token)
 
 # monitor slack api
 sc = SlackClient(token)
