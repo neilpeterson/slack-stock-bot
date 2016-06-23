@@ -18,7 +18,7 @@ The Slack Stock Bot takes two arguments:
 The Docker Run command will look like this:
 
 ```none
-docker run -it b4191f06a147 --slack-token xoxb-77643255603-kM6lA5yuenpBxwWdewrvdRSU --slack-channel stock-demo
+docker run -it neilpeterson/stock-bot --slack-token xoxb-77643255603-kM6lA5yuenpBxwWdewrvdRSU --slack-channel stock-demo
 ```
 
 ## Use Stock Bot
