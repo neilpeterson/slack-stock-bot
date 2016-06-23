@@ -1,11 +1,23 @@
 # Slack Stock Bot
 
+![](./media/stock-bot.png)
+
 ## Build Stock Bot Container
 
 - Create slack bot user and generate API key.
-- Replace KEY and Channel name in Dockerfile ENV instructions.
-- Build and start container image.
+- Build container image from Dockerfile.
 
+## Start Bot
+
+The Slack Stock Bot takes two arguments:
+- --slack-token – this is the slack API token
+- --slack-channel – this is the slack channel
+
+The Docker Run command will look like this:
+
+```none
+docker run -it b4191f06a147 --slack-token xoxb-77643255603-kM6lA5yuenpBxwWdewrvdRSU --slack-channel stock-demo
+```
 
 ## Use Stock Bot
 
@@ -28,9 +40,5 @@ Multiple symbols can be combined like this:
 ```none
 stock:msft;xoml;gpro
 ```
-
-The following image demonstrates all of the above examples.
-
-![](./media/stock-bot.png)
 
 
