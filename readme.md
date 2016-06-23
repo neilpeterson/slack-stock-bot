@@ -2,7 +2,7 @@
 
 Simple Slack bot that will return the current stock price for a given set of stock symbols.
 
-![](./media/stock-bot.png)
+![](./media/stock-bot.gif)
 
 ## Build Stock Bot Container
 
