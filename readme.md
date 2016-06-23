@@ -1,5 +1,7 @@
 # Slack Stock Bot
 
+Simple Slack bot that will return the current stock price for a given set of stock symbols.
+
 ![](./media/stock-bot.png)
 
 ## Build Stock Bot Container
