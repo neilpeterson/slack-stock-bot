@@ -1,5 +1,8 @@
 FROM windowsservercore
 
+ENV KEY <slack key>
+ENV CHANNEL <channel>
+
 RUN powershell.exe -Command \
     $ErrorActionPreference = 'Stop'; \
     wget https://www.python.org/ftp/python/3.5.1/python-3.5.1.exe -OutFile c:\python-3.5.1.exe ; \
@@ -13,4 +16,4 @@ RUN powershell -Command \
     mkdir c:\stock-bot ; \
     Invoke-WebRequest -Method Get -Uri "https://raw.githubusercontent.com/neilpeterson/slack-stock-bot/master/slack-stock-ticker.py" -OutFile c:\stock-bot\slack-stock-ticker.py
 
-ENTRYPOINT ["python", "/stock-bot/slack-stock-ticker.py"]
+ENTRYPOINT python /stock-bot/slack-stock-ticker.py --slack-token $KEY --slack-channel $CHANNEL
